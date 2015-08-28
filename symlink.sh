@@ -1,6 +1,6 @@
 #/bin/bash
 
-FILES=(gitconfig vimperatorrc vimrc zshrc)
+FILES=(gitconfig i3 spacemacs vimperatorrc vimrc zshrc)
 SRCDIR=$( cd "$(dirname $0)" && pwd )
 
 for f in "${FILES[@]}"
