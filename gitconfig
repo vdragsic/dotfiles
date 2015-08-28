@@ -1,0 +1,15 @@
+[user]
+	name = Veljko Dragsic
+	email = veljko@floatingpoint.io
+[push]
+	default = simple
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
