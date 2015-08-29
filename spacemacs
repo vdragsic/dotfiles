@@ -21,6 +21,7 @@
      better-defaults
      emacs-lisp
      git
+     github
      markdown
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -163,7 +164,13 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-)
+
+  (cua-mode t)
+  (setq mouse-autoselect-window t)
+  (global-set-key [(f7)] 'magit-status)
+  (global-set-key (kbd "C-q") 'kill-buffer)
+  (add-hook 'before-save-hook 'delete-trailing-whitespace)
+  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
