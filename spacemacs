@@ -54,7 +54,7 @@ before layers configuration."
   (setq-default
    ;; Either `vim' or `emacs'. Evil is always enabled but if the variable
    ;; is `emacs' then the `holy-mode' is enabled at startup.
-   dotspacemacs-editing-style 'emacs
+   dotspacemacs-editing-style 'vim
    ;; If non nil output loading progress in `*Messages*' buffer.
    dotspacemacs-verbose-loading nil
    ;; Specify the startup banner. Default value is `official', it displays
@@ -170,6 +170,10 @@ layers configuration."
   (global-set-key [(f7)] 'magit-status)
   (global-set-key (kbd "C-q") 'kill-buffer)
   (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
