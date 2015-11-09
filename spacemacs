@@ -166,7 +166,6 @@ before layers configuration."
 layers configuration."
 
   (cua-mode t)
-  (setq mouse-autoselect-window t)
   (global-set-key [(f7)] 'magit-status)
   (global-set-key (kbd "C-q") 'kill-buffer)
   (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -174,6 +173,8 @@ layers configuration."
   (setq web-mode-markup-indent-offset 2)
   (setq web-mode-css-indent-offset 2)
   (setq web-mode-code-indent-offset 2)
+  (setq js2-basic-offset 2
+        js-indent-l 2)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
