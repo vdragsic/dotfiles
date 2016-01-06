@@ -19,6 +19,7 @@
      ;; ----------------------------------------------------------------
      auto-completion
      better-defaults
+     elixir
      emacs-lisp
      git
      github
@@ -166,6 +167,7 @@ before layers configuration."
 layers configuration."
 
   (cua-mode t)
+  (global-linum-mode 1)
   (global-set-key [(f7)] 'magit-status)
   (global-set-key (kbd "C-q") 'kill-buffer)
   (add-hook 'before-save-hook 'delete-trailing-whitespace)
